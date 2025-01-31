@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+echo "Adding dir: /home/carbon/code/sync"
+git add /home/carbon/code/sync
+echo "Generating commit message..."
+git commit -m "Updated from $(hostname) on $(date)"
+echo "Pushing to sync repo..."
+git push
+echo "Success"
