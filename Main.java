@@ -2,7 +2,7 @@ import java.io.*;
 import javax.swing.*;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+    public static void main(String args) throws IOException {
+        System.out.println("grug");
     }
 }
