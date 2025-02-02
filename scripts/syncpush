@@ -3,9 +3,9 @@
 echo ">> Adding dir: /home/carbon/code/sync"
 git add /home/$(whoami)/code/sync
 echo ">> Generating commit message..."
-git commit -m "Updated from $(whoami) on $(hostname) on $(date) - Message: $1"
+git commit -m "Updated from >$(whoami)< on >$(hostname)< on $(date) - Message: $1"
 echo "Committed changes with message:"
-echo "Updated from $(whoami) on $(hostname) on $(date) - Message: $1"
+echo "Updated from >$(whoami)< on >$(hostname)< on $(date) - Message: $1"
 echo ">> Pushing to sync repo..."
 git push
 echo ">> Success!"
