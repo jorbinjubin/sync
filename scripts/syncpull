@@ -1,4 +1,4 @@
 #!/bin/zsh
 print -P "%F{green}>> Pulling from sync repo...%f"
-git pull
+git pull > /dev/null
 print -P "%B%F{green}>> Success!%f%b"
