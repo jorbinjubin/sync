@@ -1,14 +1,13 @@
 #!/bin/zsh
 
-echo ">> Adding dir: /home/carbon/code/sync"
-echo ""
+print -P "%F{green}>> Adding dir: /home/carbon/code/sync%f"
 git add /home/$(whoami)/code/sync
-echo ">> Generating commit message..."
+print -P ">> Generating commit message..."
 git commit -m "Updated from <$(whoami)> on <$(hostname)> on <$(date)> - Message: $1"
-echo ""
-echo ">> Committed changes with message:"
-echo ">> Updated from <$(whoami)> on <$(hostname)> on <$(date)> - Message: $1"
-echo ">> Pushing to sync repo..."
-echo ""
+print -P ""
+print -P ">> Committed changes with message:"
+print -P ">> Updated from <$(whoami)> on <$(hostname)> on <$(date)> - Message: $1"
+print -P ">> Pushing to sync repo..."
+print -P ""
 git push
-echo ">> Success!"
+print -P ">> Success!"
