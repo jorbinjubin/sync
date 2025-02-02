@@ -16,13 +16,15 @@ fi
 
 cat <<EOF > "$filename"
 import java.io.*;
+import java.util.*;
 import javax.swing.*;
 
 public class ${classname} {
-    public static void main(String args) throws IOException {
+    public static void main(String[] args) throws IOException {
         System.out.println("grug");
     }
 }
 EOF
+
 mv "$filename" ~/code/sync
-echo "Successfully saved a dozen seconds: $filename"
+echo "Successfully saved a dozen seconds and created > $filename <"
