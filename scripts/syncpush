@@ -2,11 +2,11 @@
 
 print -P "%F{green}>> %BAdding dir%b: /home/carbon/code/sync%f"
 git add /home/$(whoami)/code/sync
-print -P ">>%F{green} Generating commit message...%f"
+print -P "%F{green}>> Generating commit message...%f"
 git commit -m "Updated from <$(whoami)> on <$(hostname)> on <$(date)> - Message: $1"
 print -P ""
-print -P ">> Committed changes with message:"
-print -P ">> Updated from %F{brightcyan}<$(whoami)> %f on %F{brightcyan}<$(hostname)>%f on %{green}<$(date)>%f - Message: $1"
+print -P ">> %F{green} Committed changes with message: %f"
+print -P ">> Updated from %F{cyan}<$(whoami)> %f on %F{cyan}<$(hostname)>%f on %{green}<$(date)>%f - Message: $1"
 print -P ">> Pushing to sync repo..."
 print -P ""
 git push
