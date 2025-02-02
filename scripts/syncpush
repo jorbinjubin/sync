@@ -9,5 +9,5 @@ print -P "%F{green}>> Committed changes with message: %f"
 print -P "%F{green}>> Updated from %F{cyan}$(whoami)@$(hostname)%f on %B%F{green}$(date)%f%b - Message: $1"
 print -P "%F{green}>> Pushing to sync repo...%f"
 print -P ""
-git push > /dev/null
+git push 2> /dev/null
 print -P "%F{green}%B>> Success!%b%f"
