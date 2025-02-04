@@ -10,7 +10,7 @@ classname="$1"
 filename="${classname}.java"
 
 if [ -e "$filename" ]; then
-  echo "Error: File $filename already exists."
+  print -P "%F{red}Error: File %B$filename%b already exists.%f"
   exit 1
 fi
 
@@ -26,5 +26,5 @@ public class ${classname} {
 }
 EOF
 
-mv "$filename" ~/code/sync
-echo "Successfully saved a dozen seconds and created > $filename <"
+# mv "$filename" ~/code/sync
+print -P "%F{green}Successfully saved a dozen seconds and created%f $filename"
