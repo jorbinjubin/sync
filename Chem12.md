@@ -23,6 +23,10 @@
 * All chemical reactions release or absorb heat.
 
 * System refers to the sample that is under investigation
+  
+  * Exothermic means the system loses energy and the surroundings gain energy
+  
+  * Endothermic means the system gains energy and the surroundings lose energy
 
 * Everything that isn't the system, is the surroundings
 
@@ -45,23 +49,19 @@
 * Heat and temperature are **NOT** interchangeable
 
 * ~~Aluminum causes climate change because it melts the ice quicker~~
-
 - Heat always travels from the warmer object to the cooler object
   
   - This happens until a thermal equilibrium is achieved
   
   ## Calculations
-
 * The 3 methods of heat transfer are convection, conduction, and radiation
   
   - Thermal conductors tranfer heat quickly, while thermal insulators transfer heat slowly
-
 - "calorie" (lower case) is 1/1000 of a "Calorie" (upper case)
 
 - Temperature, $T$ is measured in $\degree$C or $\degree$K
 
-- Specific heat capacity - c - is calculated by $\frac{q}{m\Delta T}$
-
+- Specific heat capacity - c - is calculated by $\frac{Q}{m\Delta T}$
 * Example: If a gold ring with a mass of 5.5g warms up by 3 degrees, how much heat is absorbed?
   
   $Q=mc\Delta T \newline = 5.5\text{g} \cdot0.129\frac{\text{J}}{\text{g}}\cdot 3 \degree \text{C} \newline =  2.1 \text{J}$
@@ -77,4 +77,30 @@
 
 - Endothermic reactions occur when absorbed energy is greater than released energy, and exothermic is vice versa.
 
-- 
+- $\Delta H$ of melting is $-\Delta H$ of freezing, and same idea goes for vaporzation and condensation
+
+## Thermochemistry Equations and Calorimetry
+
+* $\Delta H$ of melting is $-\Delta H$ of freezing, and same idea goes for vaporzation and condensation
+
+* Temperature curves involving phase changes are not linear because during the phase change, the intermolecular bonds are being broken using the energy.
+
+* Breaking bonds requires energy and creating bonds releases energy
+  
+  * Edothermic vs exothermic is determined by which one of those 2 processes requires more energy
+
+* Nuclear reactions generate many orders of magnitude above those of chemical reactions
+  
+  * This is due to mass defect (mass lost) which is converted into pure kinetic energy via $E=mc^2$
+  
+  * The $c^2$ term is nearly $10^{17}$
+
+* Thermochemical equation steps:
+  
+  1. Create a balanced equation for the reaction
+  
+  2. Place the change in enthalpy on the correct side of the arrow (right side if negative)
+     
+     OR
+     
+     Place the change in enthalpy off to the side, $\Delta H = \pm K$ where K is the change (If positive, reaction is endothermic)
