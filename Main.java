@@ -34,6 +34,7 @@ public class Main {
         }
         sAvg/=6.0;
         System.out.println("Average mark of all students: " + sAvg + "%.");
+        System.out.println("Message for Yustin: " + classList[8].message());
         System.out.println();
 
         //Cars

@@ -41,6 +41,6 @@ public class Student {
      * @return String -> Message of the mark the stuent got
      */
     public String message() {
-        return name + "You got an " + average;
+        return name + " You got an " + average;
     }
 } // Student class
