@@ -87,7 +87,8 @@
 
 * Breaking bonds requires energy and creating bonds releases energy
   
-  * Edothermic vs exothermic is determined by which one of those 2 processes requires more energy
+  * Edothermic vs exothermic is determined by which one of those 2 processes 
+  * requires more energy
 
 * Nuclear reactions generate many orders of magnitude above those of chemical reactions
   
@@ -98,9 +99,47 @@
 * Thermochemical equation steps:
   
   1. Create a balanced equation for the reaction
+
+. Place the change in enthalpy on the correct side of the arrow (right side if negative)
   
-  2. Place the change in enthalpy on the correct side of the arrow (right side if negative)
-     
-     OR
-     
-     Place the change in enthalpy off to the side, $\Delta H = \pm K$ where K is the change (If positive, reaction is endothermic)
+  OR
+  
+  Place the change in enthalpy off to the side, $\Delta H = \pm K$ where K is the change (If positive, reaction is endothermic)
+
+- When using $\Delta H$ notation, it needs to be per mol of substance. 
+  
+  $1H_{2(g)} +\frac{1}{2}O_{2(g)} \rarr 1H_2O + 241.8\text{kJ}$
+  
+  In that equation, the substanc to take note of is $H_2$. $\Delta H= -241.8\text{kJ}$
+
+- Potential energy diagrams (at this point) simply show if the reaction is endothermic or exothermic. On the y-axis, you would have the potential energy.
+
+- Always put a subscript on the $\Delta H\degree_{type} = ...$ to specify what kind of reaction took place. syn, decomp, comb, 
+
+- The degree symbol indicates SATP.
+  
+  Summary of 4 methods:
+  
+  1. Directly insert the enthalpy in the equation
+  
+  2. Use $\Delta H\degree_{type}$ notation
+  
+  3. Molar enthalpy (Molar enthalpy for [reaction]:  $\Delta H \degree _{type} = ... \text{kJ/mol}$ [substance])
+
+Practice question:
+
+$N_{2(g)}+O_{2(g)} \rarr 2NO_{g}, \Delta H\degree_{comb}=+180.6\text{kJ}$
+
+Rewrite including enthalpy as part of reaction
+
+$N_{2(g)}+O_{2(g)}+180.6\text{kJ} \rarr 2NO_{(g)}$
+
+Graph simply needs to show that the energy went up (exothermic). ALWAYS label the axis with kJ.
+
+For 1 mole of nitrogen dioxide, just divide 180.6/2
+
+$1.000\cdot10^2$g of nitrogen is reacted with sufficient oxygen. What is the change in enthalpy?
+
+$\Delta H$ (kJ/mol) of N2O is -82.1.
+
+$\Delta H * \frac{100g}{14.01*2+16} \newline = -186.5\text{kJ}$
