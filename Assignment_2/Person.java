@@ -87,7 +87,7 @@ public class Person {
             throw new IllegalStateException("No date of birth assigned");
         }
         try {
-            return DOB.substring(7);
+            return DOB.substring(6);
         } catch(IndexOutOfBoundsException iobe) {
             throw new IllegalStateException("Invalid date of birth format.");
         }
@@ -120,7 +120,7 @@ public class Person {
             throw new IllegalStateException("No date of birth assigned");
         }
         try {
-            return DOB.substring(4, 6);
+            return DOB.substring(3, 5);
         } catch(IndexOutOfBoundsException iobe) {
             throw new IllegalStateException("Invalid date of birth format.");
         }

@@ -55,6 +55,82 @@ public class Vehicle {
     }
 
     /*
-     * 
+     * Drives the car
+     * @param distance -> distance to drive the car
+     * @return returns whether or not the destination was reached successfully with enough gas
      */
+    public boolean drive(int distance) {
+        km += distance;
+        gas-=distance/20.0;
+        if(gas<=0) {
+            gas = 0;
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    /* 
+     * Gets the type of the car
+     * @return the type of the car
+     */
+    public String getType() {
+        return type;
+    }
+
+    /*
+     * Gets the manufacturer of the car
+     * @return the manufacturer of the car
+     */
+    public String getManufact() {
+        return manufacturer;
+    }
+
+    /*
+     * Gets the model of the car
+     * @return the model of the car
+     */
+    public String getModel() {
+        return model;
+    }
+
+    /*
+     * Gets the year of the car
+     * @return the year of the car
+     */
+    public short getYear() {
+        return year;
+    }
+
+    /*
+     * Gets the color  of the car
+     * @return the color of the car
+     */
+    public String getColor() {
+        return color;
+    }
+
+    /*
+     * Gets the number of doors of the car
+     * @return the number of doors of the car
+     */
+    public byte getDoors() {
+        return numOfDoors;
+    }
+
+    /*
+     * Gets the tank size of the car
+     * @return the tank size of the car
+     */
+    public float getTankSize() {
+        return gasTankSize;
+    }
+
+    /*
+     * Gets the amount of gas left in the car
+     * @return the amount of gas left in the car
+     */
+    public float getGasLeft() {
+        return gas;
+    }
 }
