@@ -4,7 +4,8 @@ public class Wizard extends Character {
     private int mana;
     private int manaRegenRate;
     private String color;
-    
+    private int maxMana;
+    private String[] spells = new String[3];
     public Wizard(String n, int bm, int by, String mType) { //random wizard
         super(n, bm, by);
 
@@ -22,6 +23,8 @@ public class Wizard extends Character {
 
         //set magic type 
         this.mType = mType;
+        mana = 100;
+        maxMana = 100;
     }
 
     public Wizard(String n, int bm, int by, String mType, float i) { //seeded wizard
@@ -43,9 +46,35 @@ public class Wizard extends Character {
         //set magic type 
         this.mType = mType;
     }
-    public int cast() {
-        mana -= 10;
-        return attack();
-        
+
+    private void regenMana() {
+        if(mana + manaRegenRate < 100) mana += manaRegenRate;
+        else mana = 100;
     }
+
+    public int attack() {
+        mana -= 10;
+        return super.attack();
+    }
+
+    public int move(int d) {
+        regenMana();
+        return super.move(d);
+    }
+
+    public int quoffPotion(int size) {
+        if(size == 1) {
+            mana += 10;
+            return 10;
+        } else if (size == 2) {
+            mana += 20;
+            return 20;
+        } else if(size == 3) {
+            mana += 30;
+            return 30;
+        }
+        return 0;
+    }
+
+
 }

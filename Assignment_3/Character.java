@@ -141,6 +141,10 @@ public class Character {
         return intrinsic;
     }
 
+    public void setIntrinsic(float f) {
+        intrinsic = f;
+    }
+
     public String getName() {
         return name;
     }
