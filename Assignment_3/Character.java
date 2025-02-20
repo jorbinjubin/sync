@@ -10,6 +10,7 @@ public class Character {
     private float luck; // a luck factor that affects the other probabilistic events (attack, dodge, etc)
     private int level; // the overall power level of the character
     private float standing; // the character's standing with their deity, between 0 and 1
+    private int maxHealth; // maximum health of character
 
     private String name; //name to identify the character
     private int birthMonth; //month and year of birth to determine the deity of the character
@@ -24,7 +25,7 @@ public class Character {
         name = n;
         birthMonth = bm;
         birthYear = by;
-        deity = prefix[birthYear%4] + " of " + suffix[bm-1]; //The deity system determines what effect the character will get upon praying 
+        deity = prefix[birthYear%5] + " of " + suffix[bm-1]; //The deity system determines what effect the character will get upon praying 
         // it also determines what actions the character needs to do to increase their standing (if any at all)
 
         //set default values
@@ -37,7 +38,7 @@ public class Character {
         luck = 0.1f;
         level = 1;
         standing = 0;
-
+        maxHealth = 100;
         // set intrinsic
         intrinsic = (float)Math.random();
     }
@@ -58,18 +59,22 @@ public class Character {
         luck = 0.1f;
         level = 1;
         standing = 0;
+        maxHealth = 100;
 
         // set intrinsic
         intrinsic = i;
     }
 
     public int move(int distance) {
-        int timeTaken = distance/speed;
+        int timeTaken = (int)(distance/speed);
         return timeTaken;
     }
 
     public int levelUp() {
-        health += (int)(8*Math.sqrt(level));
+
+        maxHealth += (int)(8*Math.sqrt(level)); 
+        health = maxHealth; //increase max health, then heal the player to max health
+
         defence += (int)(6*Math.sqrt(level));
         baseDamage += (int)(2*Math.sqrt(level));
         speed += 3;
@@ -97,12 +102,16 @@ public class Character {
     }
 
     public boolean pray() { //currently, praying only increases luck, but I plan to expand this in the final project
-        standing -= 0.1;
         if(Math.random()<= standing) {
             luck += 0.2;
             return true;
         }
         return false;
+    }
+
+    public void rest(int time) {
+        if(health + 2*time < maxHealth) health += 2*time;
+        else health = maxHealth;
     }
 
     public int getHealth() {
@@ -141,7 +150,7 @@ public class Character {
         return intrinsic;
     }
 
-    public void setIntrinsic(float f) {
+    protected void setIntrinsic(float f) { //with theoretical other classes in this "game", the protected label allows only the seeded constructor of subclasses to access this method
         intrinsic = f;
     }
 
@@ -153,9 +162,16 @@ public class Character {
         return birthMonth + " " + birthYear;  
     }
 
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 
     public String getDeity() { //this method is technically redundant since the deity is completely deterministic based on the month and date of birth, however, will stay for ease of use.
         return deity; 
+    }
+
+    public float getStanding() {
+        return standing;
     }
 
 }
