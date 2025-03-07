@@ -128,7 +128,7 @@ public class TestCharacter {
         System.out.println("Standing: " + plr.getStanding());
         System.out.println("Intrinsic: " + plr.getIntrinsic());
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        wait(750);
+        sc.next();
         System.out.println();
         System.out.println("Since they leveled up, their standing with their deity has increased. They pray for good luck and a mana ring.");
         boolean cont = plr.pray();

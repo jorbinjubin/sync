@@ -1,0 +1,5 @@
+Arch Debian PopOS Fedora Ubuntu Manjaro
+Independant Independant Ubuntu Independant Debian Arch
+false true true true true true
+Medium Extremely high Medium High High High Low
+100831 120052 111661 73511 100831
