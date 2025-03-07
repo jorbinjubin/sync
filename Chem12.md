@@ -144,8 +144,6 @@ $\Delta H$ (kJ/mol) of N2O is -82.1.
 
 $\Delta H * \frac{100g}{14.01*2+16} \newline = -186.5\text{kJ}$
 
-
-
 A 35g piece of iron at 95C is placed into 450ml of water at 22C. Calculate the final water temperature.
 
 $\sum Q = 0 \newline m_{fe} \cdot c_{fe} \cdot \Delta T_{fe} = m_{H2O} \cdot c_{H2O} \cdot \Delta T_{H2O} \newline 35.0 \cdot 0.444 \cdot $
