@@ -58,13 +58,16 @@ public class Rating { // Rating class
                 }
                 int lpb = Integer.MIN_VALUE;
                 int maxIndex = -1;
-                for(int i = 0; i < 6; i++) {
-                    if(packageBaseSize[i] > lpb) {
-                        lpb = packageBaseSize[i]; maxIndex = i;
+                for (int i = 0; i < 6; i++) {
+                    if (packageBaseSize[i] > lpb) {
+                        lpb = packageBaseSize[i];
+                        maxIndex = i;
                     }
                 }
-                System.out.println("The distro with the largest package base is " + distros[maxIndex] + " with " + lpb + " packages in its combined repositories.");
-                System.out.println("The most stable distro is Debian."); //not sure how to even do this based on the values I used
+                System.out.println("The distro with the largest package base is " + distros[maxIndex] + " with " + lpb
+                        + " packages in its combined repositories.");
+                System.out.println("The most stable distro is Debian."); // not sure how to even do this based on the
+                                                                         // values I used
                 delay(2000);
                 System.out.println("\n");
             } else if (mChoice == 2) {
@@ -75,6 +78,11 @@ public class Rating { // Rating class
                 System.out.println("2. Convenience/Ease of Use");
                 System.out.print("Enter your choice (default=1): ");
                 do {
+                    System.out.println("You picked: Rank Distros\n");
+                    System.out.println("Distros can be ranked over 2 criteria:");
+                    System.out.println("1. Beginner-friendliness");
+                    System.out.println("2. Convenience/Ease of Use");
+                    System.out.print("Enter your choice (default=1): ");
                     try {
                         rankChoice = Integer.parseInt(inp.readLine());
                     } catch (NumberFormatException nfe) {
@@ -134,21 +142,22 @@ public class Rating { // Rating class
                             "The second most beginner-friendly distro is " + sortedDistros[1] + " with a score of "
                                     + sortedScores[1]);
                 } else if (rankChoice == 2) {
-                    
+
                     int[] bestRanking = new int[6];
-                    for(int i = 0; i < 6; i++) {
+                    for (int i = 0; i < 6; i++) {
                         int cur = 0;
-                        if(hasGuiInstaller[i]) {
+                        if (hasGuiInstaller[i]) {
                             cur += 10;
                         }
-                        if(packageBaseSize[i] > 100000) cur += 10;
-                        if(packageBaseSize[i] > 110000) cur += 15;
-                        if(stability[i].equals("High")) {
+                        if (packageBaseSize[i] > 100000)
+                            cur += 10;
+                        if (packageBaseSize[i] > 110000)
+                            cur += 15;
+                        if (stability[i].equals("High")) {
                             cur += 20;
-                        } else if(stability[i].equals("Extremely_High")) {
+                        } else if (stability[i].equals("Extremely_High")) {
                             cur += 30;
-                        }
-                        else if(stability[i].equals("Low")) {
+                        } else if (stability[i].equals("Low")) {
                             cur -= 30;
                         }
                         bestRanking[i] = cur;
@@ -170,34 +179,57 @@ public class Rating { // Rating class
                         sortedDistros[i] = distros[indices[i]];
                         sortedScores[i] = bestRanking[indices[i]];
                     }
-                    System.out.println("The most convenient distro is " + sortedDistros[0] + " with a score of " + sortedScores[0]);
-                    System.out.println("The second most convenient distro is " + sortedDistros[1] + " with a score of " + sortedScores[1]);
+                    System.out.println("The most convenient distro is " + sortedDistros[0] + " with a score of "
+                            + sortedScores[0]);
+                    System.out.println("The second most convenient distro is " + sortedDistros[1] + " with a score of "
+                            + sortedScores[1]);
                 }
                 delay(2000);
                 System.out.println("\n");
             } else if (mChoice == 3) {
                 System.out.println("You have picked Help.");
                 System.out.println("When prompted to enter a number, enter a choice that is closest to what you want.");
-                System.out.println("If information is given, it will be printed, then 2 seconds will pass before you are promted again.");
+                System.out.println(
+                        "If information is given, it will be printed, then 2 seconds will pass before you are promted again.");
                 System.out.println("Choose 4 to exit.");
+            } else if (mChoice == 4) {
+                System.out.println("You have picked Package Information.");
+                System.out.println(
+                        "On all mainstream Linux distros, software usually comes in the form of packages, which are installed using a package manager.");
+                System.out.println("");
+                String[][] packageInfo = {
+                        { "pacman", "Bleeding edge of software releases. Also has the AUR." },
+                        { "apt", "Very stable, but slightly lacking in variety" },
+                        { "apt", "Uses a similar package base to Ubuntu" },
+                        { "dnf", "Middle of the road." },
+                        { "apt", "Uses newer software than Debian" },
+                        { "pacman", "Similar repository to Arch." }
+                };
+                for (int i = 0; i < 6; i++) {
+                    System.out.println(distros[i] + " uses " + packageInfo[i][0]
+                            + " as its package manager.   \t Additional info: " + packageInfo[i][1]);
+                }
+                delay(2000);
+                System.out.println("\n");
             }
         }
     }
 
     public static void menu() throws IOException {
-        System.out.println("Please choose an option:");
-        System.out.println("1. List distros");
-        System.out.println("2. Rank distros");
-        System.out.println("3. Help");
-        System.out.println("4. Exit");
-        System.out.print("Enter an option (default=4): ");
         do {
+            System.out.println("Please choose an option:");
+            System.out.println("1. List distros");
+            System.out.println("2. Rank distros");
+            System.out.println("3. Help");
+            System.out.println("4. Package Information");
+            System.out.println("5. Exit");
+            System.out.print("Enter an option (default=5): ");
             try {
                 mChoice = Integer.parseInt(inp.readLine());
             } catch (NumberFormatException nfe) {
-                mChoice = 4; // error driven programming
+                mChoice = 5; // error driven programming
             }
-        } while (!(1 <= mChoice && mChoice <= 4));
+        } while (!(1 <= mChoice && mChoice <= 5));
         System.out.println("\n");
     }
 
