@@ -1,0 +1,27 @@
+Basic Idea
+New class - Noble, is introduced.
+Item class is added - Medication, Sword, Scroll, Trinket classes extend the Item class.
+Castle stays the same, but most of the other classes have changes to behaviour as follows:
+
+DarkRoom
+Now generates random loot alongside gold and radiation.
+
+Elf
+Elves have an innate sense for gold but are unable to interact with items (loot)
+
+Noble
+Nobles are there to complete an objective. This can be either to leave with a certain amount of gold and/or a certain set of items.
+When they are in the same room as an Elf, they may initiate a trade.
+
+Each item has a base exchange rate, as well as a multiplier based on its condition. 
+Items can be in one of the following conditions:
+Terrible
+Bad 
+Fair
+Good
+Excellent
+Perfect
+
+If a trade occurs and the Elf is able to afford the item, it will spend that amount of gold to acquire the item. 
+If the item is required by the Noble as part of his objective, he will never trade it. 
+If the item is not required by the Noble, he will sell it to the Elf.

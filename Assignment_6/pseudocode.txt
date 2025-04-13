@@ -1,0 +1,9 @@
+function gnomeSort(array):
+    pointer = 0
+    while pointer < length(array):
+        if(pointer equals 0 or array[pointer] >= array[pointer-1]): 
+            pointer = pointer +1
+        else:
+            swap array[pointer] and array[pointer-1]
+            pointer = pointer - 1
+

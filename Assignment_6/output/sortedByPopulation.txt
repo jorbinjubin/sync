@@ -1,0 +1,197 @@
+Population								Country
+------------------------------------------------------------
+1,313,973,713							China
+1,095,351,995							India
+298,444,215								United States
+245,452,739								Indonesia
+188,078,227								Brazil
+165,803,560								Pakistan
+147,365,352								Bangladesh
+142,893,540								Russia
+131,859,731								Nigeria
+127,463,611								Japan
+107,449,525								Mexico
+89,468,677								Philippines
+84,402,966								Vietnam
+82,422,299								Germany
+78,887,007								Egypt
+74,777,981								Ethiopia
+70,413,958								Turkey
+68,688,433								Iran
+64,631,595								Thailand
+62,660,551								Democratic Republic of Congo
+60,876,136								France
+60,609,153								United Kingdom
+58,133,509								Italy
+48,846,823								South Korea
+47,382,633								Myanmar (Burma)
+46,710,816								Ukraine
+44,187,637								South Africa
+43,593,035								Colombia
+41,236,378								Sudan
+40,397,842								Spain
+39,921,833								Argentina
+38,536,869								Poland
+37,445,392								Tanzania
+34,707,817								Kenya
+33,241,259								Morocco
+33,098,932								Canada
+32,930,091								Algeria
+31,056,997								Afghanistan
+28,302,603								Peru
+28,287,147								Nepal
+28,195,754								Uganda
+27,307,134								Uzbekistan
+27,019,731								Saudi Arabia
+26,783,383								Iraq
+25,730,435								Venezuela
+24,385,858								Malaysia
+23,113,019								North Korea
+23,036,087								Taiwan
+22,409,572								Ghana
+22,303,552								Romania
+21,456,188								Yemen
+20,264,082								Australia
+20,222,240								Sri Lanka
+19,686,505								Mozambique
+18,881,361								Syria
+18,595,469								Madagascar
+17,654,843								Côte d'Ivoire
+17,340,702								Cameroon
+16,491,461								Netherlands
+16,134,219								Chile
+15,233,244								Kazakhstan
+13,902,972								Burkina Faso
+13,881,427								Cambodia
+13,547,510								Ecuador
+13,013,926								Malawi
+12,525,094								Niger
+12,293,545								Guatemala
+12,236,805								Zimbabwe
+12,127,071								Angola
+11,987,121								Senegal
+11,716,829								Mali
+11,502,010								Zambia
+11,382,820								Cuba
+10,688,058								Greece
+10,605,870								Portugal
+10,379,067								Belgium
+10,293,011								Belarus
+10,235,455								Czech Republic
+10,175,014								Tunisia
+9,981,334								Hungary
+9,944,201								Chad
+9,690,222								Guinea
+9,396,411								Serbia
+9,183,984								Dominican Republic
+9,016,596								Sweden
+8,989,046								Bolivia
+8,863,338								Somalia
+8,648,248								Rwanda
+8,308,504								Haiti
+8,192,880								Austria
+8,090,068								Burundi
+7,961,619								Azerbaijan
+7,862,944								Benin
+7,523,934								Switzerland
+7,385,367								Bulgaria
+7,326,496								Honduras
+7,320,815								Tajikistan
+6,822,378								El Salvador
+6,506,464								Paraguay
+6,368,481								Laos
+6,352,117								Israel
+6,005,250								Sierra Leone
+5,906,760								Jordan
+5,900,754								Libya
+5,670,544								Papua New Guinea
+5,570,129								Nicaragua
+5,548,702								Togo
+5,450,661								Denmark
+5,439,448								Slovakia
+5,231,372								Finland
+5,213,898								Kyrgyzstan
+5,042,920								Turkmenistan
+4,786,994								Eritrea
+4,661,473								Georgia
+4,610,820								Norway
+4,498,976								Bosnia and Herzegovina
+4,494,749								Croatia
+4,492,150								Singapore
+4,466,706								Moldova
+4,303,356								Central African Republic
+4,076,140								New Zealand
+4,075,261								Costa Rica
+4,062,235								Ireland
+3,874,050								Lebanon
+3,702,314								Republic of Congo
+3,585,906								Lithuania
+3,581,655								Albania
+3,431,932								Uruguay
+3,191,319								Panama
+3,177,388								Mauritania
+3,102,229								Oman
+3,042,004								Liberia
+2,976,372								Armenia
+2,832,224								Mongolia
+2,758,124								Jamaica
+2,602,713								United Arab Emirates
+2,418,393								Kuwait
+2,279,723								Bhutan
+2,274,735								Latvia
+2,050,554								Macedonia
+2,044,147								Namibia
+2,022,331								Lesotho
+2,010,347								Slovenia
+1,641,564								Gambia
+1,639,833								Botswana
+1,442,029								Guinea-Bissau
+1,424,906								Gabon
+1,324,333								Estonia
+1,240,827								Mauritius
+1,136,334								Swaziland
+1,065,842								Trinidad and Tobago
+1,062,777								East Timor
+905,949									Fiji
+885,359									Qatar
+784,301									Cyprus
+767,245									Guyana
+698,585									Bahrain
+690,948									Comoros
+630,548									Montenegro
+552,438									Solomon Islands
+540,109									Equatorial Guinea
+486,530									Djibouti
+474,413									Luxembourg
+439,117									Suriname
+420,979									Cape Verde
+400,214									Malta
+379,444									Brunei
+359,008									Maldives
+303,770									Bahamas
+299,388									Iceland
+287,730									Belize
+279,912									Barbados
+208,869									Vanuatu
+193,413									São Tomé and Príncipe
+176,908									Samoa
+168,458									St. Lucia
+117,848									St. Vincent and the Grenadines
+114,689									Tonga
+108,004									Micronesia
+105,432									Kiribati
+102,703									Western Sahara
+89,703									Grenada
+81,541									Seychelles
+71,201									Andorra
+69,108									Antigua and Barbuda
+68,910									Dominica
+60,422									Marshall Islands
+39,129									St. Kitts and Nevis
+33,987									Liechtenstein
+32,543									Monaco
+29,251									San Marino
+20,579									Palau
+13,287									Nauru
+11,810									Tuvalu
+932										Vatican City
